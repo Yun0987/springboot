@@ -74,7 +74,7 @@ public class BoardController {
 				image.transferTo(new File(filePath));
 				
 				// 경로를 별도의 변수에 저장
-				imgPath = "/home/git/upload"+file_name;
+				imgPath = "/home/git/uploads"+file_name;
 				
 			} catch (IllegalStateException e) {
 				// TODO Auto-generated catch block
