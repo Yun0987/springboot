@@ -2,6 +2,8 @@ package com.smhrd.board.entity;
 
 import java.time.LocalDate;
 
+import org.joda.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -47,6 +49,7 @@ public class BoardEntity {
 	@PrePersist
 	protected void onCreate() {
 		this.writeDay = LocalDate.now();
+		
 	}
 	
 	
